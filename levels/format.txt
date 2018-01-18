@@ -1,0 +1,37 @@
+// sta³a wysokoœæ poziomu LEVEL_HEIGHT ( obecnie 25 )
+szerokosc poziomu   
+pozycja startowa x
+pozycja startowa y
+limit czasowy
+poziom : 
+-----------------------------------------------------------------------------(szerokosc poziomu)
+//przykladowy poziom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                #
+               ###
+              #####                 #
+             #######           #   ##                        #
+           ###########        ##  ###  #                   ### 
+          ##############     ### #### ##              #########       ###
+         ###############################             ############    ####
+#############################################################################
+
+UWAGI:
+Poziom zawsze zostanie przed³u¿ony o LEVEL_ENDING_BLOCKS bloki w prawym dolnym rogu!
+W tym miejscu bedzie znajdowaæ siê koniec poziomu

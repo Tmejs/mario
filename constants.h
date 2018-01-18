@@ -1,0 +1,53 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+#define SKY 100
+
+#define SCREEN_WIDTH 700
+#define SCREEN_HEIGHT BLOCK_HEIGHT * LEVEL_HEIGHT + SKY
+
+#define BLOCK_WIDTH 16
+#define BLOCK_HEIGHT 16
+
+#define LEVEL_ENDING_BLOCKS 5
+#define END_FLAG_POSITION_X _width - (LEVEL_ENDING_BLOCKS*BLOCK_WIDTH)
+#define END_FLAG_POSITION_Y SCREEN_HEIGHT - SpritesRect::levelEndingFlag.h
+
+#define LEVEL_PASSED S::mario.posX() >= S::level->width() + SpritesRect::levelEndingFlag.w - (LEVEL_ENDING_BLOCKS*BLOCK_WIDTH)
+
+#define HEADER_HEIGHT 24
+#define HEADER_WIDTH SCREEN_WIDTH
+
+#define HEADER_TIME_X 8
+#define HEADER_TIME_Y 8
+#define HEADER_TIME_W 50
+#define TIME_MAX_DIGITS 10
+
+#define HEADER_COINS_X SCREEN_WIDTH/4
+#define HEADER_COINS_Y HEADER_TIME_Y
+#define HEADER_COINS_W 60
+#define COINS_MAX_DIGITS TIME_MAX_DIGITS
+
+#define HEADER_LIVES_X 2*SCREEN_WIDTH/4
+#define HEADER_LIVES_Y HEADER_TIME_Y
+#define HEADER_LIVES_W 60
+
+#define HEADER_LEVEL_X 3*SCREEN_WIDTH/4
+#define HEADER_LEVEL_Y HEADER_TIME_Y
+#define HEADER_LEVEL_W 60
+#define LEVEL_MAX_DIGITS TIME_MAX_DIGITS
+
+#define OFFSET_CHANGE_SPEED MARIO_X_AXIS_VELOCITY
+#define OFFSET_CHANGE_START (SCREEN_WIDTH * 3 / 7) + offsetX
+
+#define LEVEL_HEIGHT 25
+
+// TODO
+// Ratio between orginial graphics and displayed one
+#define GAME_SCALE 1.2
+
+#define GRAVITY 1
+#define TIME_LEFT S::level->time() - (SDL_GetTicks() - S::startTime) / 1000
+
+#endif // !CONSANTS_H
+
